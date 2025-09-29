@@ -4,7 +4,7 @@
 
 <template>
   <transition name="swipe">
-    <aside ref="elementRef" v-if="cats?.length" class="sticker">
+    <aside v-if="cats?.length" ref="elementRef" class="sticker">
       <div class="sticker-inner">
         <div>
           <StickerContent :avatars="cats" />
