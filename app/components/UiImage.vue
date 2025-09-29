@@ -4,7 +4,7 @@
 
 <template>
   <span class="ui-image">
-    <NuxtImg :src="src" custom v-slot="{ isLoaded, src, imgAttrs }">
+    <NuxtImg v-slot="{ isLoaded, src, imgAttrs }" :src="src" custom>
       <img v-if="isLoaded" :src="src" v-bind="imgAttrs" />
       <div v-else class="skeleton-animation"></div>
     </NuxtImg>

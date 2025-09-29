@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import { computed } from "vue";
+
   import UiImage from "~/components/UiImage.vue";
 
   type ICat = {
@@ -11,8 +13,6 @@
 
   const props = defineProps<{ data: ICat }>();
   const { data } = props;
-
-  import { computed } from "vue";
 
   const formattedDate = computed(() => {
     try {

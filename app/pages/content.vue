@@ -4,8 +4,8 @@
 
 <template>
   <div>
-    <div class="cards" v-if="data?.length">
-      <CatCard v-for="item in data" :data="item" :key="item.id" />
+    <div v-if="data?.length" class="cards">
+      <CatCard v-for="item in data" :key="item.id" :data="item" />
     </div>
     <Sticker />
   </div>

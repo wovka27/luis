@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { defineProps } from "vue";
+
   import type { NuxtError } from "#app";
 
   defineProps<{ error: NuxtError }>();
